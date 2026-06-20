@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  joakimlarssen.github.io  -  personal portfolio (static, self-contained)
+  ----------------------------------------------------------------------------
+  DEPLOY (GitHub Pages, deploy from branch):
+    1. Create a repo named exactly:  joakimlarssen.github.io
+    2. Copy these files to the repo root:
+         index.html  styles.css  main.js  .nojekyll
+    3. git add . && git commit -m "site" && git push origin main
+    4. GitHub repo -> Settings -> Pages:
+         Source: "Deploy from a branch"
+         Branch: main   Folder: / (root)   -> Save
+    5. Live within a minute or two at:  https://joakimlarssen.github.io
+  Notes:
+    - .nojekyll disables Jekyll so all files are served verbatim.
+    - No build step. No dependencies except the Google Fonts <link> below.
+    - Remaining placeholders to fill: thesis link, first writeup. See SETUP.md.
+  ============================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joakim Nordheim Larssen</title>
+  <meta name="description" content="Joakim Nordheim Larssen, a security researcher who ships products. Oslo, Norway. I break systems and build the tools that defend them." />
+  <meta name="color-scheme" content="dark" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#work">Skip to work</a>
+
+  <main class="page">
+
+    <!-- ============================ HERO ============================ -->
+    <header class="hero" id="top">
+      <p class="hero__prompt">
+        <span class="hero__user">joakim@oslo</span><span class="hero__sep">:</span><span class="hero__cwd">~</span><span class="hero__dollar">$</span>
+        <span class="hero__cmd">whoami</span><span class="cursor" aria-hidden="true"></span>
+      </p>
+
+      <h1 class="hero__name">Joakim Nordheim Larssen</h1>
+      <p class="hero__line">security researcher who ships products</p>
+      <p class="hero__tagline">I break systems and build the tools that defend them.</p>
+      <p class="hero__loc">Oslo, Norway</p>
+
+      <nav class="hero__nav" aria-label="Primary">
+        <a href="#work">work</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="#writing">writing</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="#ctf">ctf</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="#contact">contact</a>
+      </nav>
+    </header>
+
+    <!-- ============================ WORK ============================ -->
+    <section class="section work" id="work" aria-labelledby="work-heading">
+      <div class="section__head">
+        <h2 class="section__title" id="work-heading">work</h2>
+        <span class="section__meta" aria-hidden="true">3 entries</span>
+      </div>
+
+      <ol class="rows">
+
+        <!-- RIPOSTE -->
+        <li class="row">
+          <div class="row__top">
+            <a class="row__name" href="https://github.com/JoakimLarssen/Riposte" rel="noopener" target="_blank">riposte</a>
+            <span class="chip chip--dev">in dev</span>
+          </div>
+          <p class="row__desc">
+            An offline AI purple-team platform. Red and blue agents run a four-gate
+            verified-detection loop, so every simulated attack is proven either caught or
+            missed. Fully offline, hundreds of tests.
+          </p>
+          <div class="row__foot">
+            <ul class="tags" aria-label="Stack">
+              <li>Python</li><li>LiteLLM</li><li>Sigma</li><li>MITRE ATT&amp;CK</li><li>Docker</li>
+            </ul>
+            <a class="row__link" href="https://github.com/JoakimLarssen/Riposte" rel="noopener" target="_blank">github.com/JoakimLarssen/Riposte</a>
+          </div>
+        </li>
+
+        <!-- FUTTIA -->
+        <li class="row">
+          <div class="row__top">
+            <a class="row__name" href="https://futtia.no" rel="noopener" target="_blank">futtia</a>
+            <span class="chip chip--dev">in dev</span>
+          </div>
+          <p class="row__desc">
+            AI football analysis. A TypeScript/Bun monorepo that turns match footage into
+            queryable, watchable insight.
+          </p>
+          <div class="row__foot">
+            <ul class="tags" aria-label="Stack">
+              <li>React</li><li>Hono</li><li>Bun</li><li>Python</li><li>Supabase</li><li>Vercel</li>
+            </ul>
+            <a class="row__link" href="https://futtia.no" rel="noopener" target="_blank">futtia.no</a>
+          </div>
+        </li>
+
+        <!-- BACHELOR THESIS -->
+        <li class="row">
+          <div class="row__top">
+            <span class="row__name is-placeholder">bachelor thesis</span>
+            <span class="chip chip--research">2026</span>
+          </div>
+          <p class="row__desc">
+            Secure AI-Accelerated Development in Agile Workflows: a framework for small teams.
+            An empirical study of whether AI coding tools (Claude Code, Codex, Copilot) generate
+            secure code, scored with Semgrep and manual review, on a ToSee AS case study.
+            BSc Cybersecurity, Kristiania.
+          </p>
+          <div class="row__foot">
+            <ul class="tags" aria-label="Methods">
+              <li>Semgrep</li><li>Claude Code</li><li>Codex</li><li>Copilot</li>
+            </ul>
+            <span class="row__link is-placeholder">[ thesis link pending ]</span>
+          </div>
+        </li>
+
+      </ol>
+    </section>
+
+    <!-- ======================= WRITING / RESEARCH ======================= -->
+    <section class="section writing" id="writing" aria-labelledby="writing-heading">
+      <div class="section__head">
+        <h2 class="section__title" id="writing-heading">writing</h2>
+        <span class="section__meta" aria-hidden="true">research &amp; notes</span>
+      </div>
+
+      <ul class="log">
+        <li class="log__item">
+          <time class="log__date" datetime="2026">2026</time>
+          <span class="log__title">
+            Secure AI-Accelerated Development in Agile Workflows: a framework for small teams.
+          </span>
+          <span class="log__note">bachelor thesis</span>
+        </li>
+        <li class="log__item log__item--placeholder">
+          <time class="log__date" datetime="2026">2026</time>
+          <span class="log__title is-placeholder">[ first writeup pending ]</span>
+          <span class="log__note">draft</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- =========================== CTF STRIP =========================== -->
+    <section class="section ctf" id="ctf" aria-labelledby="ctf-heading">
+      <h2 class="ctf__label" id="ctf-heading">ctf</h2>
+      <p class="ctf__line">
+        CTF with Helt Sikker: three podium finishes, one win at
+        <span class="ctf__hit">CybVest</span>, which I also organized. Recent:
+        <span class="ctf__hit">Helt Sikker solo 3rd</span>,
+        <span class="ctf__hit">EPT 2025 4th student</span>. Crypto, pwn, forensics.
+      </p>
+    </section>
+
+    <!-- ============================ ABOUT ============================ -->
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="section__head">
+        <h2 class="section__title" id="about-heading">about</h2>
+      </div>
+      <p class="about__body">
+        I am based in Oslo, Norway. I study BSc Cybersecurity at Hoyskolen Kristiania, and I am
+        active in Helt Sikker, Kristiania's student security organization, based in Bergen. I spend
+        most of my time on two things: finding where systems break, and building the tooling that
+        makes the next break easier to catch.
+      </p>
+    </section>
+
+    <!-- ============================ CONTACT ============================ -->
+    <footer class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="section__head">
+        <h2 class="section__title" id="contact-heading">contact</h2>
+      </div>
+      <ul class="contact__list">
+        <li><span class="contact__key">email</span><a href="mailto:joakimnordheimlarssen@gmail.com">joakimnordheimlarssen@gmail.com</a></li>
+        <li><span class="contact__key">github</span><a href="https://github.com/JoakimLarssen" rel="me noopener" target="_blank">github.com/JoakimLarssen</a></li>
+        <li><span class="contact__key">linkedin</span><a href="https://www.linkedin.com/in/joakim-nordheim-larssen-772614223" rel="me noopener" target="_blank">linkedin.com/in/joakim-nordheim-larssen</a></li>
+      </ul>
+    </footer>
+
+  </main>
+
+  <!-- Thin persistent status bar -->
+  <div class="statusbar" aria-hidden="true">
+    <span class="statusbar__path">~/joakim</span>
+    <span class="statusbar__hint" aria-hidden="true">lead with the work</span>
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
